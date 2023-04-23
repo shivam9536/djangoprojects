@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/demo.css' %}">
+    <title></title>
+</head>
+<body>
+    <h1>Pune Jobs Information</h1>
+    {% if jobs_list%}
+    <table id="tab">
+        <thead>
+            <th>Date</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Eligibility</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+        </thead>
+        {%for job in jobs_list %}
+        <tr>
+            <td>{{job.date}}</td>
+            <td>{{job.company}}</td>
+            <td>{{job.title}}</td>
+            <td>{{job.eligibility}}</td>
+            <td>{{job.email}}</td>
+            <td>{{job.phonenumber}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% endif%}
+</body>
+</html>

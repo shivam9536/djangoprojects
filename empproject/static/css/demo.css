@@ -1,0 +1,18 @@
+body{
+    background-image: url("https://images.ctfassets.net/hrltx12pl8hq/4VwyHiBZoUqy5bKup2DqyH/60fca058d50e75a700966dd82a1a0cf8/Ode-to-Spring.jpg?fit=fill&w=820&h=461&fm=webp");
+    backgroud-repeat: no-repeat;
+    backgroud-size: cover;
+}
+
+h1{
+    color: red;
+    text-align: center;
+}
+
+td,table{
+    margin: auto;
+    border: 2px solid blue;
+    color: solid blue;
+    background: yellow;
+    font-size: 25px;
+}
