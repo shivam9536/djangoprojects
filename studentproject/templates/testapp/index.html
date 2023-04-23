@@ -10,18 +10,9 @@
 <body>
     <div class="container" align="center">
         <div class="jumbotron">
-        <table>
-          <thead>
-            <th>Student Name</th>
-            <th>Student Marks</th>
-          </thead>
-          {% for student in student_list %}
-           <tr>
-                <td>{{student.name}}</td>
-                <td>{{student.marks}}</td>
-           </tr>
-          {% endfor %}
-        </table>
+            <h1>Index Page for Student</h1>
+            <a href="/register">Register Student</a>
+            <a href="/studentdata">List Student Data</a>
         </div>
     </div>
 </body>

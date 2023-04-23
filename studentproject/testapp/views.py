@@ -3,6 +3,8 @@ from testapp import forms
 from testapp.models import Student
 
 # Create your views here.
+def index_view(request):
+    return render(request,'testapp/index.html')
 
 def student_view(request):
     form = forms.StudentForm()
@@ -11,6 +13,7 @@ def student_view(request):
         if form.is_valid():
             form.save(commit=True)
             print("Form data inserted into database successfully")
+            return index_view(request)
     return  render(request,'testapp/register.html',{'form':form})
 
 def student_data(request):
